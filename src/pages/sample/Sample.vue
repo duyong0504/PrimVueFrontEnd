@@ -33,7 +33,7 @@ function onClickBtn() {
 function onGetData() {
   EventBus.emit('LOADING_SHOW')
 
-  request.get('https://localhost:44356/selectUsers')
+  request.get('https://localhost:7196/selectUsers')
   .then(_response => {
     const data: any[] = _response.data
 

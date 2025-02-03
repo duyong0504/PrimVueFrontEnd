@@ -20,7 +20,7 @@ const emits = defineEmits<{
 function onGetHeaderMenu() {
   EventBus.emit('LOADING_SHOW')
 
-  request.get('https://localhost:44356/api/Menu/zpCmmMenuHeaderLst')
+  request.get('https://localhost:7196/api/Menu/zpCmmMenuHeaderLst')
   .then(_response => {
     const data = _response.data as StoneHeaderMenu[]
 

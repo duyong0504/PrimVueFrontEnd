@@ -50,7 +50,7 @@ function onGetLeftMenu(menu: StoneMenu) {
     },
   }
 
-  request.get('https://localhost:44356/api/Menu/zpCmmMenuLeftLst', param)
+  request.get('https://localhost:7196/api/Menu/zpCmmMenuLeftLst', param)
   .then(_response => onGetLeftMenuCallback(_response, menu))
   .catch(_error => EventBus.emit('LOADING_HIDE'));
 }

@@ -1,7 +1,7 @@
 import axios, { AxiosStatic, CreateAxiosDefaults } from 'axios'
 import EventBus from '@/utils/EventBus'
 
-const baseURL = 'https://localhost:44356/'
+const baseURL = 'https://localhost:7196/'
 
 const baseAPI = (url: string, options?: CreateAxiosDefaults) => {
     console.log('url', url)
